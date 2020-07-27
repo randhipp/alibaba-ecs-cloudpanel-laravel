@@ -12,9 +12,9 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         $user = App\User::create([
-            'name' => 'Yoga',
-            'email' => 'randhi@jombang.digital',
-            'password' => Hash::make(''),
+            'name' => 'user',
+            'email' => 'user@gmail.com',
+            'password' => Hash::make('password'),
             'email_verified_at' => now(),
             'alibaba_key' => '',
             'alibaba_secret' => ''
@@ -27,9 +27,9 @@ class UserTableSeeder extends Seeder
         $user->instances()->save($instance);
 
         App\User::create([
-            'name' => 'Randhi',
-            'email' => 'randhi.pp@gmail.com',
-            'password' => Hash::make(''),
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('password'),
             'email_verified_at' => now(),
             'is_admin' => true
         ]);
