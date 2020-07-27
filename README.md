@@ -62,5 +62,6 @@ class UserTableSeeder extends Seeder
 - Run `composer install`
 - Run `php artisan generate`
 - Run `npm install && npm run dev`
+- Run `php artisan migrate --seed`
 - Run `php artisan optimize && php artisan serve`
 - Your app will run at http://localhost:8000/
